@@ -62,6 +62,7 @@ nav ul li a::after{
     transition: 0.5s;
 }
 
+/* adds hover elements to the navigation buttons */
 nav ul li a:hover::after{
     width: 100%;
 }
