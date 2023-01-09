@@ -49,6 +49,8 @@ nav ul li a{
     position: relative;
 }
 
+/* Navigating button edits */
+
 nav ul li a::after{
     content: '';
     width: 0;
