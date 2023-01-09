@@ -1,1 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body>
+    <header id="header">
+        <header class="container">
+            <nav class="nav-flex">
+                <h1>BRUANO</h1>
+                <ul class="sidenav">
+                    <li><a href="#about-me">About Me</a></li>
+                    <li><a href="#my-work">Work</a></li>
+                    <li><a href="#contact-me">Contact Me</a></li>
+                </ul>
+            </nav>
+            <header class="header-text">
+                <p>Full stack developer</p>
+                <h1>Hello, I'm <span>Brandon Ruano</span><br>from Seattle, WA</h1>
+            </header>
+        </header>
+    </header>
+    <section id="about-me">
+        <section class="container">
+            <section class="row">
+                <section class="about-col-1">
+                    <img src="assets/images/IMG_0170.JPG">
+                </section>
+                <section class="about-col-2">
+                    <h1 class="aboutme-subtitle">About Me</h1>
+                    <p>I am a full stack web developer that is currently enrolled in a coding bootcamp. I am originally from Southern California and now reside in Seattle, Washington. I enjoy snowboarding, watching sports, and eating good food. I graduated from California State University of Dominguez Hills with a Pre-Physical therapy degree and currently work at University of Washington Medical Center. I plan to continue to learn web development in hopes to change my career path in the near future. I enjoy all things tech from building computers to learning coding. </p>
 
+                    <section class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </section>
+                    <section class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span></li>
+                            <li><span>CSS</span></li>
+                            <li><span>JavaScript</span></li>
+                            <li><span>GitHub</span></li>
+                            <li><span>Visual Studio Code</span></li>
+                            <li><span>Terminal</span></li>
+                        </ul>
+                    </section>
+                    <section class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2020</span> Bachelor of Arts, Physical Education: Pre-Physical Therapy, California State University, Dominguez Hills</li>
+                            <li><span>2023 In Progress</span> University of Washington, Coding Bootcamp.</li>
+                        </ul>
+                    </section>
+                </section>
+            </section>
+        </section>
+    </section>
+    <section class="projects-section" id="my-work">
+        <h2>My Work</h2>
+        <p class="subtitle-projects">Links to my previous projects</p>
+        <div class="project-container">
+            <div class="project-option">
+                <img class="project-image" src="assets/images/Portfolio-1.jpg" alt="project 1 img">
+                <h3>Refactor project</h3>
+                <p class="subtext">This is my Code Refactor Project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://bruano95.github.io/code-refactor/">View here</a></p>
+            </div>
+            <div class="project-option">
+                <img class="project-image" src="assets/images/Project-2.jpg" alt="project 2 img">
+                <h3>Portfolio</h3>
+                <p class="subtext">This is my personal portfolio</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/bruano95">View here</a></p>
+            </div>
+            <div class="project-option">
+                <img class="project-image" src="assets/images/Project-3.jpg" alt="project 3 img">
+                <h3>Project Three</h3>
+                <p class="subtext">This is the link to my third project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/bruano95">View here</a></p>
+            </div>
+            <div class="project-option">
+                <img class="project-image" src="assets/images/Project-4.jpg" alt="project 4 img">
+                <h3>Project Four</h3>
+                <p class="subtext">This is the link to my fourth project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/bruano95">View here</a></p>
+            </div>
+            <div class="project-option">
+                <img class="project-image" src="assets/images/Portfolio-5.jpg" alt="project 5 img">
+                <h3>Project Five</h3>
+                <p class="subtext">This is the link to my fifth project</p>
+                <hr/>
+                <p class="subtext"><a class="project-link" href="https://github.com/bruano95">View here</a></p>
+            </div>
+        </div>
+        </section>
+    <section class="contact-me" id="contact-me">
+        <h4>Contact Me</h4>
+        <ul>
+            <li>Email: bruano@uw.edu</li>
+            <li>Phone number: (714)873-8454</li>
+            <li>GitHub: https://github.com/bruano95</li>
+        </ul>
+    </section>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname){
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+    </script>
+    
