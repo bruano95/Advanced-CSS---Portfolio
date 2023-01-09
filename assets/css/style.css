@@ -245,11 +245,23 @@ hr{
 }
 
 /* Allows the piture of myself to adjust to smaller screen */
-@media (max-width: 756px) {
+@media (max-width: 640px) {
     .row {
         flex-direction: column;
     }
-}
+    .container{
+        text-align: center;
+    }
+    .container-nav {
+        flex-direction: column;
+    }
+    nav ul {
+        flex-direction: column;
+    }
+    nav li {
+        margin: 0.8em 0;
+    }
+    }
 
 /* Allows the project cards to adjust to smaller screen */
 @media (max-width: 1000px){
